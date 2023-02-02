@@ -5,7 +5,7 @@ The [backoff](https://pypi.org/project/backoff/) package allows for retrying cer
 ## Default
 
 ```python
-@backoff.on_exception(backoff.expo, requests.exceptions.RequestException, max_tries=3)
+@backoff.on_exception(backoff.expo, (RequestException, SalesforceError), max_tries=3)
 def perform_request_standard():
     response = requests.get("https://jsonplaceholder.typicode.com/tods/1")
     response.raise_for_status()
@@ -17,13 +17,14 @@ Running the function above will retry the code three times with an exponential b
 ## Try except block
 
 ```python
-@backoff.on_exception(backoff.expo, requests.exceptions.RequestException, max_tries=3)
+
+@backoff.on_exception(backoff.expo, (RequestException, SalesforceError), max_tries=3)
 def perform_request_try_except_block():
     response = requests.get("https://jsonplaceholder.typicode.com/tods/1")
     print("done")
     try:
         response.raise_for_status()
-    except requests.exceptions.RequestException as exc:
+    except (RequestException, SalesforceError) as exc:
         logging.error(f"An error has occured! Exception: {exc }, Response: {response.json()}")
         raise exc
     return response.json()
