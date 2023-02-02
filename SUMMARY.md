@@ -21,4 +21,6 @@
 
 ## AWS
 
+* [Lambda](aws/lambda/README.md)
+  * [Deploy using ECR](aws/lambda/deploy-using-ecr.md)
 * [RDS](aws/rds.md)
