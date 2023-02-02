@@ -24,3 +24,5 @@
 * [Lambda](aws/lambda/README.md)
   * [Deploy using ECR](aws/lambda/deploy-using-ecr.md)
 * [RDS](aws/rds.md)
+* [CLI](aws/cli/README.md)
+  * [Setup](aws/cli/setup.md)
