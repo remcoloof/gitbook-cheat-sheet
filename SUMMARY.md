@@ -26,3 +26,7 @@
 * [RDS](aws/rds.md)
 * [CLI](aws/cli/README.md)
   * [Setup](aws/cli/setup.md)
+
+## Git
+
+* [Removing files](git/removing-files.md)

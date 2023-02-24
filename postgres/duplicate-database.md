@@ -25,8 +25,6 @@ It is also possible to use the interface of pgAdmin 4. To clone a database you f
 
 Also possible, but did not get this working yet.
 
-
-
 ## Resources
 
 * [https://stackoverflow.com/questions/876522/creating-a-copy-of-a-database-in-postgresql](https://stackoverflow.com/questions/876522/creating-a-copy-of-a-database-in-postgresql)&#x20;
