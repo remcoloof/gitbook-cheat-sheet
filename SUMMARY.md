@@ -30,3 +30,7 @@
 ## Git
 
 * [Removing files](git/removing-files.md)
+
+## Integrations
+
+* [Sentry](integrations/sentry.md)
