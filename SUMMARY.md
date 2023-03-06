@@ -6,6 +6,8 @@
 
 ## Python
 
+* [Typing](python/typing/README.md)
+  * [Circular dependencies](python/typing/circular-dependencies.md)
 * [Requests](python/requests/README.md)
   * [Backoff](python/requests/backoff.md)
 * [Alembic](python/alembic.md)
