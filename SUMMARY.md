@@ -19,6 +19,7 @@
 
 ## Postgres
 
+* [Granting access](postgres/granting-access.md)
 * [Duplicate database](postgres/duplicate-database.md)
 
 ## AWS
